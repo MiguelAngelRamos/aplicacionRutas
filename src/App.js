@@ -1,4 +1,5 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import Contacto from './components/Contacto';
 import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
@@ -21,7 +22,7 @@ function App() {
           <Route exact path="/nosotros">
             <Nosotros />
           </Route>
-          
+
           <Route exact path="/">
             <Inicio />
           </Route>
