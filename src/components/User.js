@@ -8,7 +8,7 @@ const User = () => {
 
   useEffect( () => {
     obtenerUsuarioId(id).then( userObj => setUser(userObj))
-  }, [])
+  }, [id])
 
   return (
     <div>

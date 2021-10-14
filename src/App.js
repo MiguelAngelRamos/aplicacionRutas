@@ -2,12 +2,14 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Contacto from './components/Contacto';
 import Inicio from './components/Inicio';
+import Navbar from './components/Navbar';
 import Nosotros from './components/Nosotros';
 import User from './components/User';
 
 function App() {
   return (
     <BrowserRouter>
+        <Navbar/>
       <div className="container mt-5">
         <Switch>
 

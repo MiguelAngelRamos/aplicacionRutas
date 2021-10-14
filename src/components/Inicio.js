@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { obtenerUsuarios } from '../api/userplace';
-
+import { Link } from 'react-router-dom';
 const Inicio = () => {
   
   const [users, setUsers] = useState([]);
@@ -16,7 +16,8 @@ const Inicio = () => {
         {
           users.map( users => (
             <li key={users.id}>
-              {users.name} - { users.email}
+              <Link to={`/user/${users.id}`}>{users.name} - { users.email}</Link>
+
             </li>
           ))
         }
